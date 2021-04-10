@@ -105,7 +105,7 @@
 
 /*__________________________6__________________________*/
     //======Many options for Modules: ===========//
-#define LIN_ADVANCE                //(L) with K=0 For TMC_UART prefer mode spreadCycle(by TFT menu) or commented if problem (Default)
+//#define LIN_ADVANCE                //(L) with K=0 For TMC_UART prefer mode spreadCycle(by TFT menu) or commented if problem (Default)
 #define ARC_SUPPORT                //(R) (Default)
 // #define POWER_LOSS_RECOVERY        // Continue print after Power-Loss.(Defaul_QQS)
 
