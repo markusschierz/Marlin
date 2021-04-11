@@ -156,7 +156,7 @@
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
-//#define MACHINE_UUID "23333b40-7696-4c9c-a6e0-fd29646aa57e"
+#define MACHINE_UUID "23333b40-7696-4c9c-a6e0-fd29646aa57e"
 
 // @section extruder
 
@@ -951,7 +951,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 250, 250, 250, 210 }
+#define DEFAULT_MAX_FEEDRATE          { 250, 250, 250, 25 }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
@@ -1005,7 +1005,7 @@
   #endif
 #endif
 
-#define DEFAULT_EJERK     5.0  // May be used by Linear Advance
+#define DEFAULT_EJERK     10.0  // May be used by Linear Advance
 
 /**
  * Junction Deviation Factor
@@ -1028,7 +1028,7 @@
  *
  * See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained
  */
-//#define S_CURVE_ACCELERATION
+#define S_CURVE_ACCELERATION
 
 //===========================================================================
 //============================= Z Probe Options =============================
@@ -1239,7 +1239,7 @@
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define PROBING_MARGIN 10
+#define PROBING_MARGIN 5
 
 // X and Y axis travel speed (mm/min) between probes 
 #define XY_PROBE_FEEDRATE  (66*60)    //3960
